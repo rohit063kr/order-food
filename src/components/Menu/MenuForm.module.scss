@@ -1,12 +1,20 @@
 .menu {
   &__item-config {
     display: flex;
+
+    @media only screen and (max-width: 600px) {
+      margin: 1rem 0;
+    }
   }
 
   &__item-times {
     display: flex;
     justify-items: flex-end;
     text-align: center;
+
+    @media only screen and (max-width: 600px) {
+      display: block;
+    }
 
     & input {
       width: 50%;

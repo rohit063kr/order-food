@@ -3,6 +3,22 @@
 html {
   font-size: 10px;
   box-sizing: border-box;
+
+  @media only screen and (max-width: 900px) {
+    font-size: 9px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 8px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 7px;
+  }
+
+  @media only screen and (max-width: 300px) {
+    font-size: 6px;
+  }
 }
 
 *,
