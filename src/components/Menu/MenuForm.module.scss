@@ -1,0 +1,15 @@
+.menu {
+  &__item-config {
+    display: flex;
+  }
+
+  &__item-times {
+    display: flex;
+    justify-items: flex-end;
+    text-align: center;
+
+    & input {
+      width: 50%;
+    }
+  }
+}

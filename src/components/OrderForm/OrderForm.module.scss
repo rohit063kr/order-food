@@ -1,0 +1,19 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+
+  &__input-container {
+    display: flex;
+    justify-content: space-between;
+
+    & > * {
+      margin-bottom: 0.7rem;
+    }
+  }
+  &__btn-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}

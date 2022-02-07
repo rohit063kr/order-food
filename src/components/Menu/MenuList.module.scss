@@ -1,0 +1,40 @@
+.menu {
+  &__list {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__list-item {
+    color: #333;
+  }
+
+  &__order {
+    text-align: center;
+  }
+
+  &__item {
+    display: table;
+    width: 100%;
+    padding: 1rem;
+
+    &:not(:last-child) {
+      margin-right: 0.4rem;
+    }
+  }
+
+  &__item-name {
+    color: orangered;
+    font-size: 2.2rem;
+  }
+
+  &__item-description {
+    color: #ccc;
+    font-size: 1.4rem;
+    margin: 3px 0;
+  }
+
+  &__item-cost {
+    font-size: 1.7rem;
+    color: rgb(255, 0, 255);
+  }
+}

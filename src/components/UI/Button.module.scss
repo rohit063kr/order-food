@@ -1,0 +1,22 @@
+.button {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.507);
+  background: rgb(255, 0, 255);
+  color: #fff;
+  transition: 0.4s all, 0.1s transform;
+  font-size: 1.7rem;
+  font-weight: 900;
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(102, 80, 102);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.507);
+    background: rgb(255, 0, 255);
+  }
+}

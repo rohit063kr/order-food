@@ -1,0 +1,13 @@
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  color: #333;
+
+  &:not(:last-child) {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+  }
+}
