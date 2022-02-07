@@ -10,6 +10,7 @@ import Button from '../UI/Button';
 
 const OrderForm = function () {
   const cartCtx = useContext(CartContext);
+
   const {
     inputState: enteredNameState,
     inputChangeHandler: enteredNameChangeHandler,
@@ -65,32 +66,36 @@ const OrderForm = function () {
   };
 
   return (
-    <form onSubmit={formSubmitHandler} className={styles['form']}>
-      <div className={styles['form__input-container']}>
-        <p>Your name</p>
-        <Input type="text" onChange={enteredNameChangeHandler} />
-      </div>
+    <React.Fragment>
+      {cartCtx.itemsInCart > 0 && (
+        <form onSubmit={formSubmitHandler} className={styles['form']}>
+          <div className={styles['form__input-container']}>
+            <p>Your name</p>
+            <Input type="text" onChange={enteredNameChangeHandler} />
+          </div>
 
-      <div className={styles['form__input-container']}>
-        <p>Your Address</p>
-        <Input type="text" onChange={adressChangeHandler} />
-      </div>
+          <div className={styles['form__input-container']}>
+            <p>Your Address</p>
+            <Input type="text" onChange={adressChangeHandler} />
+          </div>
 
-      <div className={styles['form__input-container']}>
-        <p>Residental address</p>
-        <Input type="text" onChange={rAdressChangeHandler} />
-      </div>
+          <div className={styles['form__input-container']}>
+            <p>Residental address</p>
+            <Input type="text" onChange={rAdressChangeHandler} />
+          </div>
 
-      <div className={styles['form__input-container']}>
-        <p>Phone number</p>
-        <Input type="number" onChange={phoneNumChangeHandler} />
-      </div>
+          <div className={styles['form__input-container']}>
+            <p>Phone number</p>
+            <Input type="number" onChange={phoneNumChangeHandler} />
+          </div>
 
-      <div className={`${styles['form__btn-container']}`}>
-        <Button type="button">Cancel</Button>
-        <Button type="submit">Order now</Button>
-      </div>
-    </form>
+          <div className={`${styles['form__btn-container']}`}>
+            <Button type="button">Cancel</Button>
+            <Button type="submit">Order now</Button>
+          </div>
+        </form>
+      )}
+    </React.Fragment>
   );
 };
 
