@@ -65,7 +65,6 @@ const OrderForm = function () {
     resetEnteredName();
   };
 
-  console.log(cartCtx.itemsInCart);
   return (
     <React.Fragment>
       {cartCtx.itemsInCart.length > 0 && (
