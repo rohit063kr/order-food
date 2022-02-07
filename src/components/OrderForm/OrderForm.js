@@ -65,9 +65,10 @@ const OrderForm = function () {
     resetEnteredName();
   };
 
+  console.log(cartCtx.itemsInCart);
   return (
     <React.Fragment>
-      {cartCtx.itemsInCart > 0 && (
+      {cartCtx.itemsInCart.length > 0 && (
         <form onSubmit={formSubmitHandler} className={styles['form']}>
           <div className={styles['form__input-container']}>
             <p>Your name</p>
