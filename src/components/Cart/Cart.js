@@ -67,7 +67,6 @@ const Cart = function (props) {
                 </span>
               </div>
             </div>
-            <OrderForm />
           </Card>
         </div>
       )}
