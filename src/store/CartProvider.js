@@ -40,7 +40,7 @@ const CartProvider = function (props) {
     const fetchMeals = async function () {
       setIsLoading(true);
       const responses = await fetch(
-        'https://food-menu-d9a4b-default-rtdb.firebaseio.com/meals.json'
+        'https://food-menu-d9a4b-default-rtdb.firebaseio.com/menu.json'
       );
 
       if (!responses.ok) throw new Error();
