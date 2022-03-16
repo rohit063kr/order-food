@@ -46,14 +46,15 @@ const CartProvider = function (props) {
       if (!responses.ok) throw new Error();
 
       const data = await responses.json();
+
       setIsLoading(false);
       const meals = [];
       for (const item of Object.entries(data)) {
         meals.push({
           id: item[0],
-          item: item[1].item,
+          item: item[1].title,
           cost: item[1].price,
-          description: item[1].description,
+          description: item[1].desc,
         });
       }
       setItems(meals);
